@@ -1,4 +1,5 @@
 import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
 
 // pages/index.js
 export default function Home() {
@@ -8,15 +9,14 @@ export default function Home() {
         backgroundImage: "url('images/image-mesh-gradient.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         color: "white",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
+      <Navbar />
       <main className="flex min-h-screen container">
-        <div className="container mx-auto px-12 py-4">
+        <div className="container mt-24 mx-auto px-12 py-4">
           <HeroSection/>
           </div>
       </main>
