@@ -11,7 +11,8 @@ const projectsData = [
         image: "/images/projects/1.jpg",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/natashamhds/BizappX",
-        previewUrl: "/"
+        previewUrl: "/",
+        hidePreview: true
     },
     {
         id: 2,
@@ -20,7 +21,8 @@ const projectsData = [
         image: "/images/projects/2.jpg",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/natashamhds/BizappBackoffice",
-        previewUrl: "https://test-bizapp.web.app/"
+        previewUrl: "https://test-bizapp.web.app/",
+        hidePreview: false
     },
     {
         id: 3,
@@ -29,7 +31,8 @@ const projectsData = [
         image: "/images/projects/3.jpg",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/natashamhds/Bizappos",
-        previewUrl: "/"
+        previewUrl: "/",
+        hidePreview: true
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ const projectsData = [
         image: "/images/projects/4.jpg",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/natashamhds/AGWMS",
-        previewUrl: "/"
+        previewUrl: "/",
+        hidePreview: true
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ const projectsData = [
         image: "/images/projects/TeamTime.jpg",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/natashamhds/team_time",
-        previewUrl: "/"
+        previewUrl: "/",
+        hidePreview: false
     },
     {
         id: 6,
@@ -56,7 +61,8 @@ const projectsData = [
         image: "/images/projects/6.jpg",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/natashamhds/HEROMarketMPOD",
-        previewUrl: "/"
+        previewUrl: "/",
+        hidePreview: false
     },
     {
         id: 7,
@@ -65,7 +71,8 @@ const projectsData = [
         image: "/images/projects/HERO_epod.jpg",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/natashamhds/HeroMarketEPOD",
-        previewUrl: "http://47.250.46.2:9898/"
+        previewUrl: "http://47.250.46.2:9898/",
+        hidePreview: false
     }
 ];
 
@@ -106,6 +113,7 @@ const ProjectsSection = () => {
         imgUrl={project.image} 
         gitUrl={project.gitUrl}
         previewUrl={project.previewUrl}
+        hidePreview={project.hidePreview}
         />)}</div>
     </>
   )
