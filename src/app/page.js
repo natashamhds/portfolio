@@ -8,26 +8,24 @@ import Footer from "./components/Footer";
 // pages/index.js
 export default function Home() {
   return (
-    <div
+    <main
+      className="flex flex-col min-h-screen w-full"
       style={{
         backgroundImage: "url('images/image-mesh-gradient.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         color: "white",
-        display: "flex",
-        flexDirection: "column",
       }}
     >
       <Navbar />
-      <main className="flex min-h-screen container">
-        <div className="container mt-24 mx-auto px-12 py-4">
-          <HeroSection/>
-          <AboutSection/>
-          <ProjectsSection/>
-          <EmailSection/>
-          </div>
-          <Footer/>
-      </main>
-    </div>
+      <div className="container mt-24 mx-auto px-12 py-4 flex-1">
+        <HeroSection/>
+        <AboutSection/>
+        <ProjectsSection/>
+        <EmailSection/>
+      </div>
+      <Footer/>
+    </main>
+    
   );
 }
