@@ -5,6 +5,7 @@ import Link from 'next/link';
 import NavLink from './NavLink';
 import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
 import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
 
 const navLinks = [
     { title: 'About', path: '#about' },
@@ -33,8 +34,14 @@ const Navbar = () => {
             }`}
         >
             <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-                <Link href="/" className="text-2xl md:text-5xl text-white font-semibold">
-                    Logo
+                <Link href="/" className="flex items-center">
+                    <Image 
+                        src='/images/logo.png' 
+                        alt="Logo" 
+                        width={100} 
+                        height={40}
+                        priority
+                    />
                 </Link>
 
                 {/* Mobile Menu Toggle */}
@@ -69,7 +76,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Overlay */}
-            {navBarOpen && <MenuOverlay links={navLinks} />}
+            {navBarOpen && <MenuOverlay links={navLinks} onClose={() => setNavBarOpen(false)} />}
         </nav>
     );
 };
