@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
+import AchievementSection from "./components/AchievementSection";
 
 // pages/index.js
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4 flex-1">
         <HeroSection/>
+        <AchievementSection/>
         <AboutSection/>
         <ProjectsSection/>
         <EmailSection/>
