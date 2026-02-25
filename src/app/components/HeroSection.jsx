@@ -41,10 +41,10 @@ const HeroSection = () => {
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>
               Hire Me
             </button>
-            
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-900 text-white border border-white mt-3'>
+
+            <a href="/Resume.pdf'" download className='inline-block px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-transparent hover:bg-slate-900 text-white border border-white mt-3'>
               Download CV
-            </button>
+            </a>
           </div>
         </motion.div>
 
